@@ -1,8 +1,8 @@
 # Resource Usage Evaluation of Discrete Model-Free Deep Reinforcement Learning Algorithms
 Code to run various Deep Reinforcement Learning (DRL) algorithms in the [bsuite](https://github.com/google-deepmind/bsuite) suite of environments.
 The goal is to evaluate the practicality of discrete, model-free deep RL algorithms by characterizing their performance, runtime, and memory usage in a variety of different types of environments.
-Code in this repository was used for the paper "Resource Usage Evaluation of Discrete Model-Free Deep Reinforcement Learning Algorithms", accepted at the Reinforcement Learning Conference (RLC) 2024.
-For more information, please refer to our paper (link pending as paper is currently in press)
+Code in this repository was used for the paper "Resource Usage Evaluation of Discrete Model-Free Deep Reinforcement Learning Algorithms", presented at the Reinforcement Learning Conference (RLC) in 2024.
+For more information, please refer to our paper, published in [Reinforcement Learning Journal (RLJ), Volumes 1-5, 2024](https://doi.org/10.5281/zenodo.13899776)
 
 ![radar plot](_readme_figs/scores.png)
 ![radar plot](_readme_figs/resources.png)
@@ -22,24 +22,20 @@ In total, it took 256 GB and 830 days CPU time (i.e., sixty-nine days on a twelv
 This repository contains the python scripts from this study. 
 
 This repository is organized into three main folders:
-1. _demos/_ contains short snippets of code to ensure the python environment is set up correctly. It also contains the code used to evaluate the RL agents
-2. _bsuite_runners/_ contains the programs used to train the bsuite baseline RL algorithms for the paper. For more information, please refer to the [bsuite](https://github.com/google-deepmind/bsuite) repository on GitHub
-3. _tianshou_runners/_ contains the programs used to train the tianshou RL algorithms for the paper. For more information, please refer to the [tianshou](https://github.com/thu-ml/tianshou) repository on GitHub
-
-## Project status
-Completed, pending release. TODO: add paper link and bibtex information to the README upon paper publication.
+1. [demos/](demos/) contains short snippets of code to ensure the python environment is set up correctly. It also contains the code used to evaluate the RL agents
+2. [bsuite_runners/](bsuite_runners/) contains the programs used to train the bsuite baseline RL algorithms for the paper. For more information, please refer to the [bsuite](https://github.com/google-deepmind/bsuite) repository on GitHub
+3. [tianshou_runners/](tianshou_runners/) contains the programs used to train the tianshou RL algorithms for the paper. For more information, please refer to the [tianshou](https://github.com/thu-ml/tianshou) repository on GitHub
 
 ## Citing
 If you use this in your work, please cite the accompanying paper:
 
 ```bibtex
-@article{dizon2023investigating,
-  doi = {10.36227/techrxiv.23739099.v1},
-  url = {https://doi.org/10.36227/techrxiv.23739099.v1},
-  year = {2023},
-  month = jul,
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  author = {Olivia Dizon-Paradis and Stephen Wormald and Daniel Capecci and Avanti Bhandarkar and Damon Woodard},
-  title = {Investigating the Practicality of Existing Reinforcement Learning Algorithms: A Performance Comparison}
+@article{dizon-paradis2024resource,
+    title={Resource Usage Evaluation of Discrete Model-Free Deep Reinforcement Learning Algorithms},
+    author={Dizon-Paradis, Olivia P. and Wormald, Stephen E. and Capecci, Daniel E. and Bhandarkar, Avanti and Woodard, Damon L.},
+    journal={Reinforcement Learning Journal},
+    volume={5},
+    pages={2162--2177},
+    year={2024}
 }
 ```
